@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+button{
+    background-color: transparent;
+    outline: none;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+input, select{
+    border: none;
+    outline: none;
+}
+body{
+    font-family: Helvetica;
+}
+section{
+    display: flex;
+width: 100%;
+max-width: 90rem;
+margin: 0 auto;
+height: 56.25rem;
+padding: 5rem;
+background-color: #00264F;
+position: relative;
+box-sizing: border-box;
+justify-content: flex-end;
+align-items: flex-start;
+gap: 5rem;
+}
+.logo{
+    position: absolute;
+    top: 0;
+    background-color: black;
+    left: 5rem;
+    padding: 1.5rem;
+    box-sizing: border-box;
+}
+.swatch{
+    display: flex;
+width: 4rem;
+height: 4rem;
+padding: 1.5rem;
+border-radius: 1rem;
+justify-content: center;
+align-items: center;
+}
+.clearButton{
+    color: #FFF;
+    font-weight: 700;
+    display: flex;
+align-items: center;
+gap: 0.5rem;
+}
+h1{
+font-family: Helvetica Now Display;
+font-size: 4rem;
+font-style: normal;
+text-align: left;
+font-weight: 700;
+line-height: 4.5rem; /* 112.5% */
+}
+.swatchHolder{
+    display: flex;
+align-items: flex-start;
+align-content: flex-start;
+gap: 1rem;
+align-self: stretch;
+flex-wrap: wrap;
+}
+.form{
+    display: flex;
+width: 30rem;
+padding: 2.5rem;
+flex-direction: column;
+align-items: flex-start;
+background: #FFF;
+gap: 2rem;
+flex-shrink: 0;
+}
+.inputHolder{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 1rem;
+align-self: stretch;
+}
+
+.contentLeft{
+    display: flex;
+padding-top: 40px;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+flex: 1 0 0;
+align-self: stretch;
+}
+.contentLeftText{
+    color: rgba(255, 255, 255, 0.64);
+}
+p{
+font-size: 1rem;
+font-style: normal;
+width: 100%;
+text-align: left;
+}
+.contentLeftText2{
+    color: rgba(255, 255, 255, 1);
+}
+.text400{
+    font-weight: 400;
+}
+.text500{
+font-weight: 500;
+}
+.text700{
+font-weight: 700;
+}
+.caption{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.5rem;
+align-self: stretch;
+}
+.input{
+    display: flex;
+padding: 1rem 1.5rem;
+align-items: center;
+gap: 0.5rem;
+align-self: stretch;
+background: rgba(126, 70, 184, 0.04);
+}
+.button{
+    display: flex;
+padding: 1rem 1.5rem;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+}
