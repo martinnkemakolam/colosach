@@ -21,6 +21,7 @@ export default function App(){
 
         return `rgba(${r}, ${g}, ${b}, ${1})`;
     };
+    let [imgUrl, setImgUrl] = useState('')
     useEffect(()=>{
         const buildRgb = (imageData) => {
             const rgbValues = [];
@@ -47,25 +48,38 @@ export default function App(){
             let arrCol = buildRgb(data.data)
             console.log(arrCol)
         }
-    }, [])
 
-    // let fetcher =()=>{
-    //     fetch("https://colosach.onrender.com/pexels", {
-    //             method: "POST",
-    //             mode: 'no-cors',
-    //             body: JSON.stringify({
-    //                 "color": "blue",
-    //                 "name": "boy"
-    //             })
-    //         }).then((res)=>{
-    //             console.log(res)
-    //             return res.body
-    //         })
-    //         .then((body)=> console.log(body))
-    // }
-    // fetcher()
+        let fetcher =()=>{
+            fetch("https://colosach.onrender.com/pexels", {
+                    method: "POST",
+                    mode: 'cors',
+                    body: JSON.stringify({
+                        color: "blue",
+                        name: "boy"
+                    })
+                }).then((res)=>{
+                    return res.body
+                })
+                .then((body)=>{
+                    // let reader = body.getReader()
+                    // let value = []
+                    // reader.read()
+                    // .then(val =>{
+                    //     while (true) {
+                    //         console.log(val.value)
+                    //         value.push(val.value) 
+                    //         if (val.done) {
+                    //             break
+                    //         }   
+                    //     }
+                    // })
+                })
+        }
+        fetcher()
+    }, [])
     return (
         <colContext.Provider value={{color, setColor}}>
+            <img src={imgUrl.slice(5, imgUrl.length - 1)} alt="" width={100} height={100} />
             <section ref={sectionRef}>
                 <div className="logo" style={{background: color}}>
                     <img src="/asset/logo.png" alt="colosach logo"/>

@@ -86,6 +86,7 @@ flex-wrap: wrap;
 width: 30rem;
 padding: 2.5rem;
 flex-direction: column;
+position: relative;
 align-items: flex-start;
 background: #FFF;
 gap: 2rem;
@@ -129,6 +130,76 @@ font-weight: 500;
 }
 .text700{
 font-weight: 700;
+}
+.canvasHolder{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    background: #FFF;
+}
+.middle{
+    top: 50%;
+    transform: translate(0, -50%);
+}
+.colorPicker{
+    display: flex;
+    background-color: #FFF;
+    width: fit-content;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 1000px 100px rgb(0, 0, 0);
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 5px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.model{
+    display: flex;
+    padding: 0.25rem 0.5rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+    box-sizing: border-box;
+}
+.detail{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+}
+.details{
+    display: flex;
+    width: max-content;
+    padding: 0.5rem 0.75rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+.flex{
+    flex: 1 0 0;
+}
+.hex{
+    color: rgba(255, 255, 255, 0.40);
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1rem; /* 133.333% */
+    letter-spacing: 0.18rem;
+}
+.active{
+    color: #FFF;
+}
+.ctler{
+    z-index: 1;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid white;
 }
 .caption{
     display: flex;
